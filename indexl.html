@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembuat Meme AI - Jomar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="animated-background"></div>
+
+    <header>
+        <h1>Pembuat Meme Cerdas 🤖</h1>
+        <p>Pilih gambar, tambahkan teks, dan biarkan AI menyempurnakannya!</p>
+    </header>
+
+    <main class="container">
+        <section class="controls-panel">
+            <h3>🎨 Pengaturan Meme</h3>
+            
+            <div class="control-group">
+                <label for="imageUpload">Upload Gambar Meme</label>
+                <input type="file" id="imageUpload" accept="image/*">
+            </div>
+            <div class="control-group"><label for="topText">Teks Atas</label><input type="text" id="topText" placeholder="Masukkan teks di bagian atas"></div>
+            <div class="control-group"><label for="bottomText">Teks Bawah</label><input type="text" id="bottomText" placeholder="Masukkan teks di bagian bawah"></div>
+
+            <button id="applyAiButton" class="cta-button">✨ Sempurnakan dengan AI (Simulasi)</button>
+        </section>
+
+        <section class="meme-preview-section">
+            <h3>🖼️ Pratinjau Meme</h3>
+            <div id="memeCanvasContainer" class="meme-box">
+                <canvas id="memeCanvas"></canvas>
+                <p id="placeholderText">Upload gambar untuk memulai...</p>
+            </div>
+            
+            <button id="downloadMemeButton" class="cta-button" disabled>⬇️ Download Meme</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright 2025, Made By Jomar.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
